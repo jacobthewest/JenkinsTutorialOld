@@ -7,22 +7,20 @@ pipeline {
 				sh 'echo Compile'
 			}
 		}
-	}
 
-	stages {
 		stage ('test') {
 			steps {
 				sh 'echo Test'
 			}
 		}
-	}
 
-	stages {
 		stage ('deploy') {
 			steps {
 				sh 'echo Deploy'
 			}
 		}
+
 	}
+
 }
 
